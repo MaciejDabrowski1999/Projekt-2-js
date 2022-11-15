@@ -1,0 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #000032;
+  color: white;
+  text-align: center;
+}
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 20%;
+}
