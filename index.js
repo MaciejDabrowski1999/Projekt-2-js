@@ -6,7 +6,7 @@ const eurBtn = document.querySelector("#eur");
 const usdBtn = document.querySelector("#usd");
 const chfBtn = document.querySelector("#chf");
 
-const url = "http://api.nbp.pl/api/exchangerates/rates/a/";
+const url = "https://api.nbp.pl/api/exchangerates/rates/a/";
 
 const currencyTable = ["EUR", "USD", "CHF"];
 
