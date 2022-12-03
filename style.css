@@ -1,25 +1,76 @@
 html {
   scroll-behavior: smooth;
+  font-family: "Monaco", Arial, Helvetica, sans-serif;
 }
 body {
-  background-color: #000032;
+  background-color: #0c0c4f;
   color: white;
   text-align: center;
 }
+
 .blur {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80vw;
   background: rgba(255, 255, 255, 0.15);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.3px);
   -webkit-backdrop-filter: blur(4.3px);
   border: 1px solid rgba(255, 255, 255, 0.19);
+  font-size: 18px;
 }
-.foot {
-  margin-top: 50px;
-}
-.navBar {
+
+.descripton {
   display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 20%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px 15px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 15px 15px;
+}
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  margin: 15px 15px;
+}
+.inputStyle {
+  font-family: "Monaco", Arial, Helvetica, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+  border-color: rgb(255, 255, 255);
+  border-width: 0px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #efefef;
+}
+.inputValue {
+  border: 5px;
+  border-color: rgb(255, 255, 255);
+  margin: 10px 0px;
+}
+.countsButton {
+  background-color: rgba(0, 162, 180, 0.76);
+}
+.countsButton:active {
+  background-color: rgba(1, 129, 144, 0.759);
+}
+.selectValue {
+}
+
+.foot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

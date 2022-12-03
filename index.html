@@ -8,25 +8,44 @@
     <title>Kantor</title>
   </head>
   <body>
-    <header class="container">
+    <header>
       <h1 class="head">Przelicznik walut</h1>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#d4d4d4"
+        class="bi bi-cash"
+        viewBox="0 0 16 16"
+        width="33%"
+      >
+        <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" />
+        <path
+          d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2H3z"
+        />
+      </svg>
     </header>
-    <main class="container flex blur">
-      <div class="picture">logo</div>
-      <section class="descripton"><p>Wybierz walutę i przelicz</p></section>
-      <section class="flex">
-        <input type="number form-control" class="inputValue" id="inputValue" />
-        <select class="selection currency form-select" id="currency"></select>
-        <button class="btn btn-primary" id="countsButton">Przelicz</button>
-        <div class="" id="result"></div>
+    <main class="blur">
+      <section class="descripton">
+        <p>Wybierz walutę i przelicz</p>
+        <select class="selectValue inputStyle" id="currency"></select>
+      </section>
+      <section class="buttons">
+        <p>Wpisz wartość</p>
+        <input type="number" class="inputValue inputStyle" id="inputValue" />
+        <button class="countsButton inputStyle" id="countsButton">
+          Przelicz
+        </button>
+      </section>
+      <section class="result">
+        <p>Wartość:</p>
+        <div id="result">0</div>
       </section>
     </main>
-    <footer class="container blur foot">
-      <section>
-        <p>Najczęściej wybierane</p>
-        <button class="eur btn btn-light">EUR</button>
-        <button class="usc btn btn-light">USD</button>
-        <button class="chf btn btn-light">CHF</button>
+    <footer>
+      <p>Najczęściej wybierane</p>
+      <section class="foot">
+        <button class="eur inputStyle" id="eur">EUR</button>
+        <button class="usc inputStyle" id="usd">USD</button>
+        <button class="chf inputStyle" id="chf">CHF</button>
       </section>
     </footer>
     <script src="index.js"></script>
