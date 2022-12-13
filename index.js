@@ -11,7 +11,7 @@ const url = "https://api.nbp.pl/api/exchangerates/rates/a/";
 const currencyTable = ["EUR", "USD", "CHF"];
 
 currencyTable.forEach((element) => {
-  let opt = document.createElement("option");
+  const opt = document.createElement("option");
   opt.setAttribute("class", "inputStyle");
   opt.value = element;
   opt.innerHTML = element;
@@ -21,11 +21,15 @@ currencyTable.forEach((element) => {
 const value = (rates) => {
   const valueCurrency = rates[0].mid;
   const sum = valueCurrency * inputValue.value;
-  result.innerHTML = sum;
+  if (sum < 0) {
+    inputValue.value = "Błąd wartości";
+  } else {
+    result.innerHTML = sum.toFixed(2);
+  }
 };
 
 countsButton.addEventListener("click", () => {
-  let valueOption = currency.value;
+  const valueOption = currency.value;
   fetch(url + valueOption)
     .then((response) => response.json())
     .then((data) => value(data.rates))

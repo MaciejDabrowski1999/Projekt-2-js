@@ -23,30 +23,22 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.19);
   font-size: 18px;
 }
-
-.descripton {
+.flex {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 15px 15px;
+}
+.descripton {
+  flex-direction: column;
 }
 .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  margin: 15px 15px;
 }
 .result {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 50px;
-  margin: 15px 15px;
 }
 .inputStyle {
-  font-family: "Monaco", Arial, Helvetica, sans-serif;
   text-align: center;
   border-radius: 5px;
   border-color: rgb(255, 255, 255);
@@ -65,12 +57,4 @@ body {
 }
 .countsButton:active {
   background-color: rgba(1, 129, 144, 0.759);
-}
-.selectValue {
-}
-
-.foot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
